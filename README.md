@@ -27,3 +27,6 @@ npm run build
 ```sh
 npm run lint
 ```
+
+user: admin@example.com
+password: 123456
