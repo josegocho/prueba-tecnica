@@ -58,11 +58,14 @@ getProducts()
       >
         Delete Product
       </button>
+      <button type="button" class="border-2 border-black border-solid rounded-md p-2">
+        New Product
+      </button>
     </div>
 
     <main class="resp">
       <section class="flex flex-col pt-5" v-if="products.length > 0">
-        <div class="pt-10 grid grid-cols-5 gap-10">
+        <div class="pt-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
           <div v-for="product in products" :key="product.id">
             <ProductCard :product="product" />
           </div>

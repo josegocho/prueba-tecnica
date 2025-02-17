@@ -1,13 +1,17 @@
-export interface Product {
+export interface Product extends saveProduct {
   id: number
+  creationAt: string
+  updatedAt: string
+}
+
+export interface saveProduct {
   title: string
   description: string
   price: number
   category: Category
   images: Array<string>
-  creationAt: string
-  updatedAt: string
 }
+
 export interface User {
   id: number
   name: string
